@@ -46,8 +46,7 @@ namespace quicknet
 		KeepAlive,
 		DisconnectionRequest,
 		// game messages
-		PlayerJoined,
-		PlayerLeft,
+		// Add custom messages here.
 		COUNT
 	};
 
@@ -123,11 +122,5 @@ namespace quicknet
 	// GAME MESSAGES
 	//////////////////////////////////////////////////////////////////////////////////////////////////
 
-	DEFINE_QUICKNETMESSAGE_START(PlayerJoined, 1, s_flagReliable);
-	uint8_t m_playerID;
-	DEFINE_QUICKNETMESSAGE_END;
-
-	DEFINE_QUICKNETMESSAGE_START(PlayerLeft, 1, s_flagReliable);
-	uint8_t m_playerID;
-	DEFINE_QUICKNETMESSAGE_END;
+	// Define custom game messages here.
 }

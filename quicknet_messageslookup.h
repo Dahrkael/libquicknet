@@ -52,9 +52,10 @@ break
 			CASE_GET_MESSAGE_FROM_ID(ConnectionSuccess);
 			CASE_GET_MESSAGE_FROM_ID(KeepAlive);
 			CASE_GET_MESSAGE_FROM_ID(DisconnectionRequest);
+
 			// game messages
-			CASE_GET_MESSAGE_FROM_ID(PlayerJoined);
-			CASE_GET_MESSAGE_FROM_ID(PlayerLeft);
+			// Insert your game messages here.
+			// Do this by using CASE_GET_MESSAGE_FROM_ID( YourMessageName );
 		case COUNT:
 		default:
 			std::ostringstream ss;
