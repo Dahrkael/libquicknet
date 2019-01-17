@@ -104,19 +104,5 @@ namespace quicknet
 
 	/////////////////////////////////////////////////////////////////////
 
-	bool MessagePlayerJoined::DeSerialize(Stream& stream)
-	{
-		bool success = true;
-		success = success && stream.DeSerializeByte(m_playerID);
-		return success;
-	}
-
-	/////////////////////////////////////////////////////////////////////
-
-	bool MessagePlayerLeft::DeSerialize(Stream& stream)
-	{
-		bool success = true;
-		success = success && stream.DeSerializeByte(m_playerID);
-		return success;
-	}
+	// Implement de-serialization for game specific messages here.
 }
